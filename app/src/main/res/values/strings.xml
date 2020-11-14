@@ -9,4 +9,7 @@
     <string name="hint_weight">Enter weight (kg)</string>
     <string name="hint_height">Enter height (cm)</string>
     <string name="BMI" />
+    <string name="info">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. Underweight less 18.5, Normal weight from 18.5 to 24.9, Overweight from 25 to 29.9, Obesity if BMI is more than 30 or greater</string>
+    <string name="close">Close</string>
+    <string name="info_title">More Information</string>
 </resources>

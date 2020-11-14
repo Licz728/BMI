@@ -1,5 +1,6 @@
 package com.example.bmi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editTextHeight: EditText
     private lateinit var textViewBMI: TextView
     private lateinit var imageViewBMI: ImageView
+    private lateinit var imageViewMoreInfo: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +36,12 @@ class MainActivity : AppCompatActivity() {
         editTextHeight = findViewById(R.id.editTextHeight)
         imageViewBMI = findViewById(R.id.imageView)
         textViewBMI = findViewById(R.id.textViewBMI)
+        imageViewMoreInfo = findViewById(R.id.imageViewMoreInfo)
+
+        imageViewMoreInfo.setOnClickListener {
+            val intent = Intent(this, InfoActivity::class.java)
+            startActivity(intent)
+        }
 
         val buttonCalculate: Button = findViewById(R.id.buttonCalculate)
         buttonCalculate.setOnClickListener {
